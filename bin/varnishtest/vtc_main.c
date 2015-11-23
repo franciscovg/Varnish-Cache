@@ -523,7 +523,7 @@ main(int argc, char * const *argv)
 	for (;argc > 0; argc--, argv++) {
 		p = VFIL_readfile(NULL, *argv, NULL);
 		if (p == NULL) {
-			fprintf(stderr, "Cannot stat file \"%s\": %s\n",
+			fprintf(stderr, "Cannot find file \"%s\": %s\n",
 			    *argv, strerror(errno));
 			if (vtc_continue)
 				continue;
